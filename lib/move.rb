@@ -8,17 +8,11 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(input)
-  input = gets.strip
   input.to_i
+  index = input - 1
 end
-
-board = [" ", " ", " "]
-def update_array_at_with(array, index, value)
-  array[index] = value
-end
-
-update_array_at_with(board, 0, "X")
-
-board
 
 def move(array, index, value)
+  array[index] = value
+  board
+end
